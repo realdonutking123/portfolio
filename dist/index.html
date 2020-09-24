@@ -1,0 +1,442 @@
+<!DOCTYPE html><html color-mode="light" lang="en"><head>
+    <meta charset="utf-8">
+    <title>realdonutking123</title>
+    <script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <link rel="icon" href="https://avatars3.githubusercontent.com/u/44879242?s=500&amp;v=4">
+      </head>
+  
+  <body>
+    <div id="container">
+      <!-- Dark Mode Toggle  -->
+      <div class="color-mode-toggle">
+        <button class="color-mode-btn light--hidden" aria-label="Toggle light mode">
+          <svg class="icon-sun">
+            <use xlink:href="assets/svg/svg-defs.svg#sun"></use>
+          </svg>
+        </button>
+        <button class="color-mode-btn dark--hidden" aria-label="Toggle dark mode">
+          <svg class="icon-moon">
+            <use xlink:href="assets/svg/svg-defs.svg#moon"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- 
+        Name Block
+        -->
+      <div id="name-block"></div>
+      <!-- 
+        Navigation Block
+        -->
+      <div id="nav-block">
+        <!-- Additional nav links go here -->
+        <span id="projects" class="nav-selected"> Projects. </span>
+      </div>
+      <!-- 
+        Profile Block
+        -->
+      <div id="pf-img-container">
+        <img id="pf-img-source" src="https://avatars3.githubusercontent.com/u/44879242?s=500&amp;v=4">
+        <img id="pf-img-shadow" src="https://avatars3.githubusercontent.com/u/44879242?s=500&amp;v=4">
+      </div>
+      <div id="pf-info-container">
+        <div id="pf-info-bio">
+          <!-- Github bio goes here  -->
+        </div>
+        <div id="pf-info-links">
+        <div id="pf-info-github">
+          <svg class="pf-info-icon icon-f">
+            <use xlink:href="assets/svg/svg-defs.svg#github"></use>
+          </svg>
+          <a target="_blank" href="https://github.com/realdonutking123">
+            <span>realdonutking123</span>
+          </a>
+        </div>
+      
+          <div id="pf-info-twitter">
+            <svg class="pf-info-icon icon-f">
+              <use xlink:href="assets/svg/svg-defs.svg#twitter"></use>
+            </svg>
+            <a target="_blank" href="https://twitter.com/@REAL_DONUT_KING">
+              <span>@REAL_DONUT_KING</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+        Repository Block
+        -->
+      <div id="repo-block">
+        <div id="repo-grid" class="grid" data-masonry="{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;gutter&quot;: 20, &quot;horizontalOrder&quot;: true, &quot;columnWidth&quot;: 350, &quot;fitWidth&quot;: true }">
+          <!-- repository cards go here -->
+        
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/gitfolio-online">
+                <span class="repo-title">
+                  
+                  gitfolio-online
+                </span>
+                <span class="repo-desc"></span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/gitfolio">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  gitfolio
+                </span>
+                <span class="repo-desc">:octocat: personal website + blog  for every github user</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>HTML</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/realdonutking123.github.io">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  realdonutking123.github.io
+                </span>
+                <span class="repo-desc">this is my website (work in progress)</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/Discord-OwO-Bot">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  Discord-OwO-Bot
+                </span>
+                <span class="repo-desc">A Discord bot that will keep track of your OwO</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/turing-doodle">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  turing-doodle
+                </span>
+                <span class="repo-desc"></span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>JavaScript</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/falcor">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  falcor
+                </span>
+                <span class="repo-desc">A JavaScript library for efficient data fetching</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>CSS</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/2048-maker">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  2048-maker
+                </span>
+                <span class="repo-desc"></span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>CSS</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/2048-CUPCAKES">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  2048-CUPCAKES
+                </span>
+                <span class="repo-desc">– Cupcakes version of 2048 game –</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>CSS</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/doge2048">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  doge2048
+                </span>
+                <span class="repo-desc">doge2048</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>CSS</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/2048">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  2048
+                </span>
+                <span class="repo-desc">A small clone of 1024 (https://play.google.com/store/apps/details?id=com.veewo.a1024)</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          
+          <div class="grid-item">
+            
+            <div class="repo-lang">
+              <span>HTML</span>
+            </div>
+          
+            <div class="repo-about">
+              <a href="https://github.com/realdonutking123/github-slideshow">
+                <span class="repo-title">
+                  
+            <svg class="icon-fork">
+                  <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+            </svg>
+          
+                  github-slideshow
+                </span>
+                <span class="repo-desc">A robot powered training repository :robot:</span>
+              </a>
+            </div>
+            <div class="repo-stats">
+              <svg class="icon-star">
+                <use xlink:href="assets/svg/svg-defs.svg#star"></use>
+              </svg>
+              <span>0</span>
+              <svg class="icon-fork">
+                <use xlink:href="assets/svg/svg-defs.svg#fork"></use>
+              </svg>
+              <span>0</span>
+            </div>
+          </div>
+
+          </div>
+      </div>
+    </div>
+    <!-- 
+      Scripts
+      -->
+    <script src="index.js"></script>
+    <!-- Built using Portfolio (https://github.com/shaansubbaiah/Portfolio) -->
+  
+
+</body></html>
